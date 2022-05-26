@@ -18,7 +18,6 @@ router.get('/:id', (req, res) => {
 	const id = req.params.id;
 	const _id = {id}
 	console.log(_id)
-	// console.log(req.body.id)
 	Note
 		.findOne({"_id" : id})
 		.then(note => {
